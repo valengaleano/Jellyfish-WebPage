@@ -1,0 +1,275 @@
+body
+{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span{
+    
+    
+    animation: span 3s infinite;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: 100;
+    background-color: hsla(0, 0%, 100%, 0.582);
+    border-radius: 8px;
+    
+
+}
+
+@keyframes span
+{
+    0% {color: #4169E1;}
+    17% {color: #032B44;}
+    34% {color: #1ABC9C;}
+    51% {color: #007BA7;}
+    68% {color: blue;}
+    85% {color: turquoise;}
+    100% {color: lightseagreen;}
+    
+}
+
+
+p::selection
+{
+    background-color: rgb(4, 4, 134);
+    color: #ffffff;
+}
+
+span::after
+{
+    content:  "⋅˚₊‧ ଳ ‧₊˚ ⋅";
+}
+
+.header
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(25, 16, 158);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 80px;
+}
+
+.menu ul
+{
+    display: flex;
+    list-style: none;
+}
+
+li
+{
+    margin-right: 15px;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+.bannerprincipal
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(imagenes/jellyfish.jpg);
+    background-size: 100%;
+    background-position: 0 -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bannerprincipal div
+{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+
+}
+
+.bannerprincipal  div a:active
+{
+    color: rgb(179, 246, 255);
+}
+
+.bannerprincipal div p,
+.bannerprincipal div a
+{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.bannerprincipal div a
+{
+    text-decoration: none;
+    color: #000000;
+    background-color: #678aff;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.flotante
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flotante div,
+.slider div
+{
+display: flex;
+justify-content: space-evenly;
+width: 70%;
+position: absolute;
+margin-top: -80px;
+
+}
+
+.flotante div img,
+.galeria div figure img,
+.blog div img,
+.slider div img
+{
+    width: 250px;
+    border-radius: 20px;
+    
+}
+
+.galeria, .blog
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria h2,
+.blog h2,
+.slider h2
+{
+    font-size: 50px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.galeria div, 
+.blog div,
+.testimonio article
+{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.galeria div figure
+{
+margin: 8px;
+}
+
+.galeria div figure figcaption
+{
+    text-align: center;
+}
+
+.blog div 
+{
+    justify-content: space-between;
+}
+
+
+.blog div article
+{
+    width: 48%;
+}
+
+.blog div article img
+{
+    width: 100%;
+}
+.slider
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider div
+{
+    position: relative;
+    margin-top: 0;
+}
+
+.testimonio
+{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonio article
+{
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.testimonio article figure img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: #678aff 4px dotted;
+
+}
+
+.footer
+{   
+    margin-top: 100px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(25, 16, 158);
+
+}
+
+.footer div img
+{
+    width: 50px;
+}
+
+.testimonio p::first-letter,
+.blog p::first-letter
+{
+    color: #678aff;
+    font-size: 130%;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.testimonio h2::before
+{
+    content: "✦ ";
+    color: #678aff;
+}
+
+.testimonio div :nth-child(3)
+{
+   text-decoration: underline; 
+}
+
+
+
